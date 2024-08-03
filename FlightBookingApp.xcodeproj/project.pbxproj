@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E34F97E82C5BF9C20091CD99 /* Inter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E34F97E72C5BF9C20091CD99 /* Inter.ttf */; };
+		E34F97EA2C5BF9E20091CD99 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E34F97E92C5BF9E20091CD99 /* Colors.xcassets */; };
+		E34F97EF2C5BFA280091CD99 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34F97EE2C5BFA280091CD99 /* OnboardingView.swift */; };
+		E34F97F32C5BFC190091CD99 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34F97F22C5BFC190091CD99 /* AppTheme.swift */; };
+		E34F97FB2C5C07450091CD99 /* CoreMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34F97FA2C5C07450091CD99 /* CoreMethods.swift */; };
 		E35D23FE2C5AAEF400400D42 /* FlightBookingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35D23FD2C5AAEF400400D42 /* FlightBookingAppApp.swift */; };
-		E35D24002C5AAEF400400D42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35D23FF2C5AAEF400400D42 /* ContentView.swift */; };
 		E35D24022C5AAEF500400D42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E35D24012C5AAEF500400D42 /* Assets.xcassets */; };
 		E35D24052C5AAEF500400D42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E35D24042C5AAEF500400D42 /* Preview Assets.xcassets */; };
 		E35D240F2C5AAEF500400D42 /* FlightBookingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35D240E2C5AAEF500400D42 /* FlightBookingAppTests.swift */; };
@@ -34,9 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E34F97E72C5BF9C20091CD99 /* Inter.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Inter.ttf; sourceTree = "<group>"; };
+		E34F97E92C5BF9E20091CD99 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		E34F97EE2C5BFA280091CD99 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		E34F97F02C5BFB460091CD99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E34F97F22C5BFC190091CD99 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		E34F97FA2C5C07450091CD99 /* CoreMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMethods.swift; sourceTree = "<group>"; };
 		E35D23FA2C5AAEF400400D42 /* FlightBookingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightBookingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35D23FD2C5AAEF400400D42 /* FlightBookingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightBookingAppApp.swift; sourceTree = "<group>"; };
-		E35D23FF2C5AAEF400400D42 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E35D24012C5AAEF500400D42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E35D24042C5AAEF500400D42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E35D240A2C5AAEF500400D42 /* FlightBookingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightBookingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +80,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E34F97E52C5BF97C0091CD99 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E35D24012C5AAEF500400D42 /* Assets.xcassets */,
+				E34F97E62C5BF9880091CD99 /* Fonts */,
+				E34F97E92C5BF9E20091CD99 /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E34F97E62C5BF9880091CD99 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E34F97E72C5BF9C20091CD99 /* Inter.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E34F97EB2C5BFA050091CD99 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E34F97EC2C5BFA110091CD99 /* Onboarding */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E34F97EC2C5BFA110091CD99 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				E34F97ED2C5BFA180091CD99 /* View */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		E34F97ED2C5BFA180091CD99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E34F97EE2C5BFA280091CD99 /* OnboardingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E34F97F12C5BFBE80091CD99 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				E34F97F22C5BFC190091CD99 /* AppTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		E34F97F82C5C071F0091CD99 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E34F97F92C5C07360091CD99 /* Methods */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E34F97F92C5C07360091CD99 /* Methods */ = {
+			isa = PBXGroup;
+			children = (
+				E34F97FA2C5C07450091CD99 /* CoreMethods.swift */,
+			);
+			path = Methods;
+			sourceTree = "<group>";
+		};
 		E35D23F12C5AAEF400400D42 = {
 			isa = PBXGroup;
 			children = (
@@ -94,10 +169,13 @@
 		E35D23FC2C5AAEF400400D42 /* FlightBookingApp */ = {
 			isa = PBXGroup;
 			children = (
+				E34F97F02C5BFB460091CD99 /* Info.plist */,
 				E35D23FD2C5AAEF400400D42 /* FlightBookingAppApp.swift */,
-				E35D23FF2C5AAEF400400D42 /* ContentView.swift */,
-				E35D24012C5AAEF500400D42 /* Assets.xcassets */,
+				E34F97F82C5C071F0091CD99 /* Core */,
 				E35D24032C5AAEF500400D42 /* Preview Content */,
+				E34F97E52C5BF97C0091CD99 /* Resources */,
+				E34F97EB2C5BFA050091CD99 /* Screens */,
+				E34F97F12C5BFBE80091CD99 /* Theme */,
 			);
 			path = FlightBookingApp;
 			sourceTree = "<group>";
@@ -231,6 +309,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E34F97E82C5BF9C20091CD99 /* Inter.ttf in Resources */,
+				E34F97EA2C5BF9E20091CD99 /* Colors.xcassets in Resources */,
 				E35D24052C5AAEF500400D42 /* Preview Assets.xcassets in Resources */,
 				E35D24022C5AAEF500400D42 /* Assets.xcassets in Resources */,
 			);
@@ -257,8 +337,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E35D24002C5AAEF400400D42 /* ContentView.swift in Sources */,
+				E34F97F32C5BFC190091CD99 /* AppTheme.swift in Sources */,
 				E35D23FE2C5AAEF400400D42 /* FlightBookingAppApp.swift in Sources */,
+				E34F97EF2C5BFA280091CD99 /* OnboardingView.swift in Sources */,
+				E34F97FB2C5C07450091CD99 /* CoreMethods.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +507,7 @@
 				DEVELOPMENT_TEAM = X6S9N9K4MZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlightBookingApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +537,7 @@
 				DEVELOPMENT_TEAM = X6S9N9K4MZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlightBookingApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

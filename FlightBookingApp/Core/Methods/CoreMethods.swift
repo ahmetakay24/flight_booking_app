@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+public func sizeCalculator(_ size: CGFloat, _ ratio: CGFloat) -> CGFloat {
+    return size * (ratio / 100)
+}
