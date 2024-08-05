@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E34F97E82C5BF9C20091CD99 /* Inter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E34F97E72C5BF9C20091CD99 /* Inter.ttf */; };
 		E34F97EA2C5BF9E20091CD99 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E34F97E92C5BF9E20091CD99 /* Colors.xcassets */; };
 		E34F97EF2C5BFA280091CD99 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34F97EE2C5BFA280091CD99 /* OnboardingView.swift */; };
 		E34F97F32C5BFC190091CD99 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34F97F22C5BFC190091CD99 /* AppTheme.swift */; };
@@ -18,6 +17,10 @@
 		E35D240F2C5AAEF500400D42 /* FlightBookingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35D240E2C5AAEF500400D42 /* FlightBookingAppTests.swift */; };
 		E35D24192C5AAEF500400D42 /* FlightBookingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35D24182C5AAEF500400D42 /* FlightBookingAppUITests.swift */; };
 		E35D241B2C5AAEF500400D42 /* FlightBookingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35D241A2C5AAEF500400D42 /* FlightBookingAppUITestsLaunchTests.swift */; };
+		E3880B9C2C60F76B007FADDD /* Inter28pt-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3880B9B2C60F76B007FADDD /* Inter28pt-Medium.ttf */; };
+		E3880B9D2C60F76E007FADDD /* Inter28pt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3880B9A2C60F75D007FADDD /* Inter28pt-Bold.ttf */; };
+		E3880BA12C60F7ED007FADDD /* Inter28pt-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3880BA02C60F7ED007FADDD /* Inter28pt-Thin.ttf */; };
+		E3880BA52C611A5D007FADDD /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3880BA42C611A5D007FADDD /* SignInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E34F97E72C5BF9C20091CD99 /* Inter.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Inter.ttf; sourceTree = "<group>"; };
 		E34F97E92C5BF9E20091CD99 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		E34F97EE2C5BFA280091CD99 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		E34F97F02C5BFB460091CD99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E34F97F22C5BFC190091CD99 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		E34F97FA2C5C07450091CD99 /* CoreMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMethods.swift; sourceTree = "<group>"; };
 		E35D23FA2C5AAEF400400D42 /* FlightBookingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightBookingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +54,11 @@
 		E35D24142C5AAEF500400D42 /* FlightBookingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightBookingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35D24182C5AAEF500400D42 /* FlightBookingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightBookingAppUITests.swift; sourceTree = "<group>"; };
 		E35D241A2C5AAEF500400D42 /* FlightBookingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightBookingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E3880B982C60F2A8007FADDD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3880B9A2C60F75D007FADDD /* Inter28pt-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter28pt-Bold.ttf"; sourceTree = "<group>"; };
+		E3880B9B2C60F76B007FADDD /* Inter28pt-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter28pt-Medium.ttf"; sourceTree = "<group>"; };
+		E3880BA02C60F7ED007FADDD /* Inter28pt-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter28pt-Thin.ttf"; sourceTree = "<group>"; };
+		E3880BA42C611A5D007FADDD /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +99,9 @@
 		E34F97E62C5BF9880091CD99 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				E34F97E72C5BF9C20091CD99 /* Inter.ttf */,
+				E3880BA02C60F7ED007FADDD /* Inter28pt-Thin.ttf */,
+				E3880B9B2C60F76B007FADDD /* Inter28pt-Medium.ttf */,
+				E3880B9A2C60F75D007FADDD /* Inter28pt-Bold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -101,6 +109,7 @@
 		E34F97EB2C5BFA050091CD99 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E3880BA22C611A35007FADDD /* SignIn */,
 				E34F97EC2C5BFA110091CD99 /* Onboarding */,
 			);
 			path = Screens;
@@ -169,7 +178,7 @@
 		E35D23FC2C5AAEF400400D42 /* FlightBookingApp */ = {
 			isa = PBXGroup;
 			children = (
-				E34F97F02C5BFB460091CD99 /* Info.plist */,
+				E3880B982C60F2A8007FADDD /* Info.plist */,
 				E35D23FD2C5AAEF400400D42 /* FlightBookingAppApp.swift */,
 				E34F97F82C5C071F0091CD99 /* Core */,
 				E35D24032C5AAEF500400D42 /* Preview Content */,
@@ -203,6 +212,22 @@
 				E35D241A2C5AAEF500400D42 /* FlightBookingAppUITestsLaunchTests.swift */,
 			);
 			path = FlightBookingAppUITests;
+			sourceTree = "<group>";
+		};
+		E3880BA22C611A35007FADDD /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				E3880BA32C611A42007FADDD /* View */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		E3880BA32C611A42007FADDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E3880BA42C611A5D007FADDD /* SignInView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,9 +334,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E34F97E82C5BF9C20091CD99 /* Inter.ttf in Resources */,
 				E34F97EA2C5BF9E20091CD99 /* Colors.xcassets in Resources */,
+				E3880B9D2C60F76E007FADDD /* Inter28pt-Bold.ttf in Resources */,
 				E35D24052C5AAEF500400D42 /* Preview Assets.xcassets in Resources */,
+				E3880BA12C60F7ED007FADDD /* Inter28pt-Thin.ttf in Resources */,
+				E3880B9C2C60F76B007FADDD /* Inter28pt-Medium.ttf in Resources */,
 				E35D24022C5AAEF500400D42 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +367,7 @@
 				E34F97F32C5BFC190091CD99 /* AppTheme.swift in Sources */,
 				E35D23FE2C5AAEF400400D42 /* FlightBookingAppApp.swift in Sources */,
 				E34F97EF2C5BFA280091CD99 /* OnboardingView.swift in Sources */,
+				E3880BA52C611A5D007FADDD /* SignInView.swift in Sources */,
 				E34F97FB2C5C07450091CD99 /* CoreMethods.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

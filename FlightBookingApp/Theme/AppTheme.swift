@@ -15,6 +15,7 @@ struct AppTheme {
     let dangerColors: DangerColors
     let successColors: SuccessColors
     let warningColors: WarningColors
+    let otherColors : OtherColors
     
     init() {
         self.deviceSize = DeviceSize()
@@ -23,6 +24,7 @@ struct AppTheme {
         self.dangerColors = DangerColors()
         self.successColors = SuccessColors()
         self.warningColors = WarningColors()
+        self.otherColors = OtherColors()
     }
     
     struct DeviceSize {
@@ -37,14 +39,19 @@ struct AppTheme {
     }
     
     struct Fonts {
-        var bigTextBigger: Font = .custom("Inter-Regular", size: 40.0)
-        var bigTextSmaller: Font = .custom("Inter-Regular", size: 24.0)
-        var titleBigger: Font = .custom("Inter-Regular", size: 20.0)
-        var titleSmaller: Font = .custom("Inter-Regular", size: 16.0)
-        var bodyBigger: Font = .custom("Inter-Regular", size: 14.0)
-        var bodySmaller: Font = .custom("Inter-Regular", size: 12.0)
-        var bodySmallerV2: Font = .custom("Inter-Thin", size: 12.0)
-        var overline: Font = .custom("Inter-Regular", size: 10.0)
+        var bigTitle: Font = .custom("Inter28pt-Bold", size: 40.0)
+        var bigTextBigger: Font = .custom("Inter28pt-Medium", size: 40.0)
+        var bigTextSmaller: Font = .custom("Inter28pt-Medium", size: 24.0)
+        var titleBigger: Font = .custom("Inter28pt-Medium", size: 20.0)
+        var titleSmaller: Font = .custom("Inter28pt-Medium", size: 16.0)
+        var bodyBigger: Font = .custom("Inter28pt-Medium", size: 14.0)
+        var bodySmaller: Font = .custom("Inter28pt-Medium", size: 12.0)
+        var bodySmallerV2: Font = .custom("Inter28pt-Thin", size: 12.0)
+        var overline: Font = .custom("Inter28pt-Medium", size: 10.0)
+    }
+    
+    struct OtherColors {
+        var blackest : Color { return Color("Blackest") }
     }
     
     struct BlueColors {
