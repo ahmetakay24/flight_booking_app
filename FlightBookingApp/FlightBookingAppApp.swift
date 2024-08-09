@@ -11,7 +11,9 @@ import SwiftUI
 struct FlightBookingAppApp: App {
     var body: some Scene {
         WindowGroup {
-            OnboardingView().environment(\.appTheme, AppTheme())
+            //OnboardingView().environment(\.appTheme, AppTheme())
+            //SignInView().environment(\.appTheme, AppTheme())
+            HomeView().environment(\.appTheme, AppTheme())
         }
     }
 }

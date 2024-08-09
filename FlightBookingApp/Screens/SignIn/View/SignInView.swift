@@ -100,6 +100,45 @@ struct SignInView: View {
                 .minimumScaleFactor(0.5)
                 .lineLimit(1)
                 .padding(.bottom, sizeCalculator(theme.deviceSize.height, 2.95))
+            
+            HStack(spacing : sizeCalculator(theme.deviceSize.width, 4.26)){
+                
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/){
+                    Image("facebook")
+                }.frame(width: sizeCalculator(theme.deviceSize.width, 26.21),height: sizeCalculator(theme.deviceSize.height, 7.88))
+                    .background(Color(red: 242/255, green: 243/255, blue: 246/255))
+                    .cornerRadius(10)
+                
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/){
+                    Image("google")
+                }.frame(width: sizeCalculator(theme.deviceSize.width, 26.21),height: sizeCalculator(theme.deviceSize.height, 7.88))
+                    .background(Color(red: 242/255, green: 243/255, blue: 246/255))
+                    .cornerRadius(10)
+                
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/){
+                    Image("apple")
+                }.frame(width: sizeCalculator(theme.deviceSize.width, 26.21),height: sizeCalculator(theme.deviceSize.height, 7.88))
+                    .background(Color(red: 242/255, green: 243/255, blue: 246/255))
+                    .cornerRadius(10)
+                
+            }.frame(width: sizeCalculator(theme.deviceSize.width, 87.17),height: sizeCalculator(theme.deviceSize.height, 7.88))
+                .padding(.bottom, sizeCalculator(theme.deviceSize.height, 2.95))
+            
+            HStack(spacing : sizeCalculator(theme.deviceSize.width, 1.06)){
+                
+                Text("Don’t Have an Account?")
+                    .font(theme.fonts.bodyBigger)
+                    .minimumScaleFactor(0.5)
+                    .lineLimit(1)
+                
+                Button(action : {}){
+                    Text("Sign Up")
+                        .font(theme.fonts.bodyBigger)
+                        .minimumScaleFactor(0.5)
+                        .lineLimit(1)
+                }
+                
+            }.frame(width: sizeCalculator(theme.deviceSize.width, 57.86))
 
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .top)
     }

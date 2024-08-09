@@ -21,6 +21,7 @@
 		E3880B9D2C60F76E007FADDD /* Inter28pt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3880B9A2C60F75D007FADDD /* Inter28pt-Bold.ttf */; };
 		E3880BA12C60F7ED007FADDD /* Inter28pt-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3880BA02C60F7ED007FADDD /* Inter28pt-Thin.ttf */; };
 		E3880BA52C611A5D007FADDD /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3880BA42C611A5D007FADDD /* SignInView.swift */; };
+		E3C1DC6A2C6648230025446C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1DC692C6648230025446C /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		E3880B9B2C60F76B007FADDD /* Inter28pt-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter28pt-Medium.ttf"; sourceTree = "<group>"; };
 		E3880BA02C60F7ED007FADDD /* Inter28pt-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter28pt-Thin.ttf"; sourceTree = "<group>"; };
 		E3880BA42C611A5D007FADDD /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		E3C1DC692C6648230025446C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		E34F97EB2C5BFA050091CD99 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E3C1DC672C66480D0025446C /* Home */,
 				E3880BA22C611A35007FADDD /* SignIn */,
 				E34F97EC2C5BFA110091CD99 /* Onboarding */,
 			);
@@ -226,6 +229,22 @@
 			isa = PBXGroup;
 			children = (
 				E3880BA42C611A5D007FADDD /* SignInView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E3C1DC672C66480D0025446C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E3C1DC682C6648140025446C /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E3C1DC682C6648140025446C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E3C1DC692C6648230025446C /* HomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -367,6 +386,7 @@
 				E34F97F32C5BFC190091CD99 /* AppTheme.swift in Sources */,
 				E35D23FE2C5AAEF400400D42 /* FlightBookingAppApp.swift in Sources */,
 				E34F97EF2C5BFA280091CD99 /* OnboardingView.swift in Sources */,
+				E3C1DC6A2C6648230025446C /* HomeView.swift in Sources */,
 				E3880BA52C611A5D007FADDD /* SignInView.swift in Sources */,
 				E34F97FB2C5C07450091CD99 /* CoreMethods.swift in Sources */,
 			);
