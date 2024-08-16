@@ -41,6 +41,7 @@ struct AppTheme {
     struct Fonts {
         var bigTitle: Font = .custom("Inter28pt-Bold", size: 40.0)
         var bigTextBigger: Font = .custom("Inter28pt-Medium", size: 40.0)
+        var bigTextMedium: Font = .custom("Inter28pt-Bold", size: 34.0)
         var bigTextSmaller: Font = .custom("Inter28pt-Medium", size: 24.0)
         var titleBigger: Font = .custom("Inter28pt-Medium", size: 20.0)
         var titleSmaller: Font = .custom("Inter28pt-Medium", size: 16.0)
