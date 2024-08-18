@@ -10,8 +10,16 @@ import SwiftUI
 struct HomeView: View {
     @Environment(\.appTheme) var theme
 
+    @StateObject var homeViewModel = HomeViewModel()
+    
     @State var isOneWayMarked: Bool = true
     @State var isRoundTripMarked: Bool = false
+
+    @State var fromTextField: String = ""
+    
+    init() {
+        homeViewModel.fetchDatas()
+    }
 
     var body: some View {
         NavigationStack {
@@ -51,7 +59,6 @@ struct HomeView: View {
                 }.frame(width: .infinity, height: sizeCalculator(theme.deviceSize.height, 22.16), alignment: .top)
 
                 VStack(alignment: .center, spacing: 0) {
-                    
                     HStack(spacing: 0) {
                         Button(action: {
                             if isOneWayMarked == false {
@@ -68,7 +75,7 @@ struct HomeView: View {
                                 .minimumScaleFactor(0.5)
                                 .lineLimit(1)
                                 .frame(width: sizeCalculator(theme.deviceSize.width, 16.53), height: sizeCalculator(theme.deviceSize.height, 2.09))
-                        }.frame(width: sizeCalculator(theme.deviceSize.width, 26.93),height: sizeCalculator(theme.deviceSize.height, 2.46))
+                        }.frame(width: sizeCalculator(theme.deviceSize.width, 26.93), height: sizeCalculator(theme.deviceSize.height, 2.46), alignment: .leading)
 
                         Button(action: {
                             if isRoundTripMarked == false {
@@ -85,13 +92,36 @@ struct HomeView: View {
                                 .minimumScaleFactor(0.5)
                                 .lineLimit(1)
                                 .frame(width: sizeCalculator(theme.deviceSize.width, 16.53), height: sizeCalculator(theme.deviceSize.height, 2.09))
-                        }.frame(width: sizeCalculator(theme.deviceSize.width, 23.99),height: sizeCalculator(theme.deviceSize.height, 2.46))
+                        }.frame(width: sizeCalculator(theme.deviceSize.width, 23.99), height: sizeCalculator(theme.deviceSize.height, 2.46), alignment: .leading)
 
                     }.frame(width: sizeCalculator(theme.deviceSize.width, 82.93), height: sizeCalculator(theme.deviceSize.height, 2.46), alignment: .leading)
                         .padding(.top, sizeCalculator(theme.deviceSize.height, 3.94))
-                    
-                    //...
-                    TextField("Placeholder", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/).frame(alignment: .center)
+
+                    HStack {
+                        Text("From")
+                            .font(theme.fonts.bodyBigger)
+                            .foregroundStyle(.black)
+                            .minimumScaleFactor(0.5)
+                            .lineLimit(1)
+                            .frame(alignment: .leading)
+
+                    }.frame(width: sizeCalculator(theme.deviceSize.width, 82.93), alignment: .leading)
+                        .padding(.top, sizeCalculator(theme.deviceSize.height, 2.95))
+                        .padding(.bottom, sizeCalculator(theme.deviceSize.height, 0.86))
+
+                    HStack(spacing: 0) {
+                        Image("flight_landing")
+                            .resizable()
+                            .frame(width: sizeCalculator(theme.deviceSize.width, 5.33), height: sizeCalculator(theme.deviceSize.height, 2.46))
+                            .padding(.leading, sizeCalculator(theme.deviceSize.width, 4.79))
+
+                        //AutoComplete will be added
+                        TextField("Country, city or airport", text: $fromTextField)
+                            .padding(.leading, sizeCalculator(theme.deviceSize.width, 4.26))
+
+                    }.frame(width: sizeCalculator(theme.deviceSize.width, 82.93), height: sizeCalculator(theme.deviceSize.height, 5.91), alignment: .leading)
+                        .background(Color(red: 230/255, green: 232/255, blue: 233/255))
+                        .cornerRadius(15)
 
                 }.frame(width: theme.deviceSize.width, height: sizeCalculator(theme.deviceSize.height, 62.68), alignment: .top)
                     .background(.white)
@@ -111,56 +141,3 @@ struct HomeView: View {
 #Preview {
     HomeView().environment(\.appTheme, AppTheme())
 }
-
-/*
- ZStack(alignment : .top) {
-     Image("global_map")
-         .resizable()
-         .aspectRatio(contentMode: .fill)
-         .frame(width: theme.deviceSize.width, height: sizeCalculator(theme.deviceSize.height, 22.16),alignment: .top)
-
-     VStack(alignment: .center, spacing: 0) {
-         Text("Ahmet")
-     }
-     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .top)
- }
- .navigationBarTitleDisplayMode(.inline)
- .toolbar {
-     ToolbarItem(placement: .principal) {
-         Text("Search Flights")
-             .font(theme.fonts.titleBigger)
-             .foregroundColor(.white)
-             .minimumScaleFactor(0.5)
-             .lineLimit(1)
-     }
- }
- .background(theme.blueColors.bc80)
- */
-
-/* NavigationStack {
-  ZStack(alignment: .center) {
-      Image("global_map")
-          .resizable()
-          .aspectRatio(contentMode: .fill)
-          .padding(.top,sizeCalculator(theme.deviceSize.height, 5.41))
-          .frame(width: theme.deviceSize.width, height: sizeCalculator(theme.deviceSize.height, 22.16), alignment: .top)
-
-      Text("Discover")
-          .font(theme.fonts.bigTextMedium)
-          .foregroundStyle(.white)
-          .padding(.top,sizeCalculator(theme.deviceSize.height, 5.41))
-
-  }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .top)
-      .ignoresSafeArea()
-      .background(theme.blueColors.bc80)
-      .navigationBarTitleDisplayMode(.inline)
-                  .toolbar {
-                      ToolbarItem(placement: .principal) {
-                          Text("Search Flights")
-                              .font(theme.fonts.titleBigger)
-                              .foregroundColor(.white)
-                              .minimumScaleFactor(0.5)
-                              .lineLimit(1)
-                      }
-                  }
- } */
