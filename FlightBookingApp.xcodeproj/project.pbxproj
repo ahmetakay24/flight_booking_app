@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3027D622C80B16700ADBB8A /* HomeViewTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3027D612C80B16700ADBB8A /* HomeViewTabView.swift */; };
+		E3027D672C834FC000ADBB8A /* HomeViewSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3027D662C834FC000ADBB8A /* HomeViewSections.swift */; };
+		E3027D692C83507500ADBB8A /* HomeViewButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3027D682C83507500ADBB8A /* HomeViewButtons.swift */; };
 		E32B86F72C71178A0081C175 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32B86F62C71178A0081C175 /* HomeModel.swift */; };
 		E32B86FA2C7117AA0081C175 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32B86F92C7117AA0081C175 /* HomeViewModel.swift */; };
 		E32B86FD2C7117BC0081C175 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32B86FC2C7117BC0081C175 /* HomeService.swift */; };
@@ -27,6 +30,7 @@
 		E3880BA12C60F7ED007FADDD /* Inter28pt-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3880BA02C60F7ED007FADDD /* Inter28pt-Thin.ttf */; };
 		E3880BA52C611A5D007FADDD /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3880BA42C611A5D007FADDD /* SignInView.swift */; };
 		E3C1DC6A2C6648230025446C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1DC692C6648230025446C /* HomeView.swift */; };
+		E3E953A02C78B8EC00621FE3 /* AppDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E9539F2C78B8EC00621FE3 /* AppDatePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E3027D612C80B16700ADBB8A /* HomeViewTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTabView.swift; sourceTree = "<group>"; };
+		E3027D662C834FC000ADBB8A /* HomeViewSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewSections.swift; sourceTree = "<group>"; };
+		E3027D682C83507500ADBB8A /* HomeViewButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewButtons.swift; sourceTree = "<group>"; };
 		E32B86F62C71178A0081C175 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		E32B86F92C7117AA0081C175 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E32B86FC2C7117BC0081C175 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
@@ -71,6 +78,7 @@
 		E3880BA02C60F7ED007FADDD /* Inter28pt-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter28pt-Thin.ttf"; sourceTree = "<group>"; };
 		E3880BA42C611A5D007FADDD /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		E3C1DC692C6648230025446C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E3E9539F2C78B8EC00621FE3 /* AppDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E3027D5F2C80B13E00ADBB8A /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				E3027D652C834FA500ADBB8A /* Textfields */,
+				E3027D642C834F9500ADBB8A /* Buttons */,
+				E3027D632C834F8800ADBB8A /* Sections */,
+				E3027D602C80B14600ADBB8A /* Tabview */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		E3027D602C80B14600ADBB8A /* Tabview */ = {
+			isa = PBXGroup;
+			children = (
+				E3027D612C80B16700ADBB8A /* HomeViewTabView.swift */,
+			);
+			path = Tabview;
+			sourceTree = "<group>";
+		};
+		E3027D632C834F8800ADBB8A /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				E3027D662C834FC000ADBB8A /* HomeViewSections.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		E3027D642C834F9500ADBB8A /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				E3027D682C83507500ADBB8A /* HomeViewButtons.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		E3027D652C834FA500ADBB8A /* Textfields */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Textfields;
+			sourceTree = "<group>";
+		};
 		E32B86F42C7117750081C175 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +238,7 @@
 		E34F97F82C5C071F0091CD99 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				E3E9539C2C78B88E00621FE3 /* Subviews */,
 				E32B86FE2C7118310081C175 /* Protocols */,
 				E34F97F92C5C07360091CD99 /* Methods */,
 			);
@@ -291,9 +342,18 @@
 		E3C1DC682C6648140025446C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E3027D5F2C80B13E00ADBB8A /* Subviews */,
 				E3C1DC692C6648230025446C /* HomeView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E3E9539C2C78B88E00621FE3 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				E3E9539F2C78B8EC00621FE3 /* AppDatePicker.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,7 +496,11 @@
 				E34F97EF2C5BFA280091CD99 /* OnboardingView.swift in Sources */,
 				E32B86FA2C7117AA0081C175 /* HomeViewModel.swift in Sources */,
 				E32B86F72C71178A0081C175 /* HomeModel.swift in Sources */,
+				E3027D622C80B16700ADBB8A /* HomeViewTabView.swift in Sources */,
 				E3C1DC6A2C6648230025446C /* HomeView.swift in Sources */,
+				E3E953A02C78B8EC00621FE3 /* AppDatePicker.swift in Sources */,
+				E3027D672C834FC000ADBB8A /* HomeViewSections.swift in Sources */,
+				E3027D692C83507500ADBB8A /* HomeViewButtons.swift in Sources */,
 				E32B87022C7201750081C175 /* ViewModelProtocol.swift in Sources */,
 				E3880BA52C611A5D007FADDD /* SignInView.swift in Sources */,
 				E34F97FB2C5C07450091CD99 /* CoreMethods.swift in Sources */,

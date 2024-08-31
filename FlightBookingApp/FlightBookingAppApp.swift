@@ -9,6 +9,9 @@ import SwiftUI
 
 @main
 struct FlightBookingAppApp: App {
+    
+    let theme = AppTheme()
+    
     var body: some Scene {
         WindowGroup {
             //OnboardingView().environment(\.appTheme, AppTheme())
