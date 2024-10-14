@@ -7,112 +7,47 @@
 
 import SwiftUI
 
-struct TestView : View {
-    
+struct AppDatePicker: View {
     @Environment(\.appTheme) var theme
-    
-    @State var selectedDepartureDate : Date = .now
-    
-    @State var isOneTrip : Bool = true
-    
-    @State var isShowingReturnDatePicker : Bool = false
+    @Environment(\.dismiss) var dismiss
+
+    @Binding var selectedDate: Date
     
     var body: some View {
+        VStack(spacing: 0) {
+            Rectangle()
+                .fill(Color.gray.opacity(0.3))
+                .frame(width: sizeCalculator(theme.deviceSize.width, 15.99), height: sizeCalculator(theme.deviceSize.height, 0.36))
+                .cornerRadius(2.5)
+                .padding(.top, sizeCalculator(theme.deviceSize.height, 1.78))
 
-        VStack{
-            
-            VStack{
-                
-                Text("Select Date")
-                
-                Text("20 Jun 2020")
-                
-                DatePicker("", selection: $selectedDepartureDate, displayedComponents: .date)
-                .datePickerStyle(.graphical)
+
+                DatePicker("", selection: $selectedDate, displayedComponents: .date)
+                .datePickerStyle(.wheel)
                     .padding()
                     .navigationTitle("Select Departure Date")
                     .navigationBarTitleDisplayMode(.inline)
-            }.frame(height: sizeCalculator(theme.deviceSize.height, 58.12))
-                .background(.white)
-                .clipShape(
-                    .rect(
-                        topLeadingRadius: 30,
-                        topTrailingRadius: 30
-                    )
-                )
             
-        }.frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(.black)
-            .ignoresSafeArea()
+
+            Button(action: {
+                dismiss()
+            }, label: {
+                
+                Text("Select Date").foregroundStyle(.white)
+                    .padding(.vertical, sizeCalculator(theme.deviceSize.height, 1.84))
+                    .padding(.horizontal, sizeCalculator(theme.deviceSize.width, 31.46))
+                
+            }).background(theme.blueColors.bc80)
+                .clipShape(RoundedRectangle(cornerRadius: 5))
+                
+
+        }.frame(width: theme.deviceSize.width, height: sizeCalculator(theme.deviceSize.height, 50), alignment: .top)
+            .background(.white)
+            .clipShape(
+                .rect(
+                    topLeadingRadius: 30,
+                    topTrailingRadius: 30
+                )
+            )
     }
-}
-
-struct AppDepartureDatePicker: View {
-    @Binding var selectedDepartureDate: Date
-    @Binding var selectedReturnDate: Date
-    @Binding var isOneTrip: Bool
-
-    @State var isShowingReturnDatePicker: Bool = false
-    
-    @Environment(\.dismiss) var dismiss
-
-    public var body: some View {
-        NavigationStack {
-            DatePicker("", selection: $selectedDepartureDate, displayedComponents: .date)
-                .datePickerStyle(.graphical)
-                .padding()
-                .navigationTitle("Select Departure Date")
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbar {
-                    ToolbarItem(placement: .confirmationAction) {
-                        Button("Select") {
-                            if isOneTrip == false {
-                                isShowingReturnDatePicker = true
-                            } else {
-                                dismiss()
-                            }
-                        }
-                    }
-                    ToolbarItem(placement: .cancellationAction) {
-                        Button("Cancel") {
-                            dismiss()
-                        }
-                    }
-                }.navigationDestination(isPresented: $isShowingReturnDatePicker) {
-                    AppReturnDatePicker(selectedReturnDate: $selectedReturnDate, dismiss: dismiss)
-                }
-        }
-    }
-}
-
-struct AppReturnDatePicker: View {
-    @Binding var selectedReturnDate: Date
-    let dismiss: DismissAction
-
-    public var body: some View {
-        NavigationStack {
-            DatePicker("", selection: $selectedReturnDate, displayedComponents: .date)
-                .datePickerStyle(.graphical)
-                .padding()
-                .navigationTitle("Select Return Date")
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbar {
-                    ToolbarItem(placement: .cancellationAction) {
-                        Button("Cancel") {
-                            dismiss()
-                        }
-                    }
-                    ToolbarItem(placement: .confirmationAction) {
-                        Button("Select") {
-                            dismiss()
-                        }
-                    }
-                }
-                .navigationBarBackButtonHidden(true)
-        }
-    }
-}
-
-#Preview {
-    TestView()
 }

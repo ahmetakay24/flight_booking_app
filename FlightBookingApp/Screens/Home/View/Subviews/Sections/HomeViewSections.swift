@@ -64,7 +64,28 @@ struct HomeViewTextFieldLongHeader : View {
                 .lineLimit(1)
 
         }.frame(width: sizeCalculator(theme.deviceSize.width, 82.93), alignment: .leading)
-            .padding(.top, sizeCalculator(theme.deviceSize.height, 2.95))
             .padding(.bottom, sizeCalculator(theme.deviceSize.height, 0.86))
+    }
+}
+
+struct HomeDeparuteAndArrivalTextFieldHeaders : View {
+    @Environment(\.appTheme) var theme
+    var body: some View {
+        HStack(spacing: 0) {
+            Text("Departure date")
+                .font(theme.fonts.bodyBigger)
+                .foregroundStyle(.black)
+                .minimumScaleFactor(0.5)
+                .lineLimit(1)
+
+            Spacer()
+
+            Text("Arrival date")
+                .font(theme.fonts.bodyBigger)
+                .foregroundStyle(.black)
+                .minimumScaleFactor(0.5)
+                .lineLimit(1)
+
+        }.frame(width: sizeCalculator(theme.deviceSize.width, 82.93), alignment: .bottomLeading)
     }
 }

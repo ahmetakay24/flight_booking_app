@@ -25,12 +25,15 @@
 		E35D240F2C5AAEF500400D42 /* FlightBookingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35D240E2C5AAEF500400D42 /* FlightBookingAppTests.swift */; };
 		E35D24192C5AAEF500400D42 /* FlightBookingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35D24182C5AAEF500400D42 /* FlightBookingAppUITests.swift */; };
 		E35D241B2C5AAEF500400D42 /* FlightBookingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35D241A2C5AAEF500400D42 /* FlightBookingAppUITestsLaunchTests.swift */; };
+		E367009E2CB4212B004BA128 /* HomeTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = E367009D2CB4212B004BA128 /* HomeTextFields.swift */; };
+		E36700A42CB427EC004BA128 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36700A32CB427EC004BA128 /* TransactionView.swift */; };
 		E3880B9C2C60F76B007FADDD /* Inter28pt-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3880B9B2C60F76B007FADDD /* Inter28pt-Medium.ttf */; };
 		E3880B9D2C60F76E007FADDD /* Inter28pt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3880B9A2C60F75D007FADDD /* Inter28pt-Bold.ttf */; };
 		E3880BA12C60F7ED007FADDD /* Inter28pt-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3880BA02C60F7ED007FADDD /* Inter28pt-Thin.ttf */; };
 		E3880BA52C611A5D007FADDD /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3880BA42C611A5D007FADDD /* SignInView.swift */; };
 		E3C1DC6A2C6648230025446C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1DC692C6648230025446C /* HomeView.swift */; };
 		E3E953A02C78B8EC00621FE3 /* AppDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E9539F2C78B8EC00621FE3 /* AppDatePicker.swift */; };
+		E3F61F532CBD0682008FD6A5 /* TransactionViewSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F61F522CBD0681008FD6A5 /* TransactionViewSubviews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,8 @@
 		E35D24142C5AAEF500400D42 /* FlightBookingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightBookingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35D24182C5AAEF500400D42 /* FlightBookingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightBookingAppUITests.swift; sourceTree = "<group>"; };
 		E35D241A2C5AAEF500400D42 /* FlightBookingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightBookingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E367009D2CB4212B004BA128 /* HomeTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTextFields.swift; sourceTree = "<group>"; };
+		E36700A32CB427EC004BA128 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
 		E3880B982C60F2A8007FADDD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3880B9A2C60F75D007FADDD /* Inter28pt-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter28pt-Bold.ttf"; sourceTree = "<group>"; };
 		E3880B9B2C60F76B007FADDD /* Inter28pt-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter28pt-Medium.ttf"; sourceTree = "<group>"; };
@@ -79,6 +84,7 @@
 		E3880BA42C611A5D007FADDD /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		E3C1DC692C6648230025446C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E3E9539F2C78B8EC00621FE3 /* AppDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatePicker.swift; sourceTree = "<group>"; };
+		E3F61F522CBD0681008FD6A5 /* TransactionViewSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewSubviews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,7 @@
 		E3027D652C834FA500ADBB8A /* Textfields */ = {
 			isa = PBXGroup;
 			children = (
+				E367009D2CB4212B004BA128 /* HomeTextFields.swift */,
 			);
 			path = Textfields;
 			sourceTree = "<group>";
@@ -204,6 +211,7 @@
 		E34F97EB2C5BFA050091CD99 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E36700A12CB427B6004BA128 /* Transaction */,
 				E3C1DC672C66480D0025446C /* Home */,
 				E3880BA22C611A35007FADDD /* SignIn */,
 				E34F97EC2C5BFA110091CD99 /* Onboarding */,
@@ -312,6 +320,23 @@
 			path = FlightBookingAppUITests;
 			sourceTree = "<group>";
 		};
+		E36700A12CB427B6004BA128 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				E36700A22CB427DC004BA128 /* View */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		E36700A22CB427DC004BA128 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E3F61F502CBD0613008FD6A5 /* Subviews */,
+				E36700A32CB427EC004BA128 /* TransactionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E3880BA22C611A35007FADDD /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,6 +377,14 @@
 			isa = PBXGroup;
 			children = (
 				E3E9539F2C78B8EC00621FE3 /* AppDatePicker.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		E3F61F502CBD0613008FD6A5 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				E3F61F522CBD0681008FD6A5 /* TransactionViewSubviews.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -490,6 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E367009E2CB4212B004BA128 /* HomeTextFields.swift in Sources */,
 				E34F97F32C5BFC190091CD99 /* AppTheme.swift in Sources */,
 				E32B86FD2C7117BC0081C175 /* HomeService.swift in Sources */,
 				E35D23FE2C5AAEF400400D42 /* FlightBookingAppApp.swift in Sources */,
@@ -498,10 +532,12 @@
 				E32B86F72C71178A0081C175 /* HomeModel.swift in Sources */,
 				E3027D622C80B16700ADBB8A /* HomeViewTabView.swift in Sources */,
 				E3C1DC6A2C6648230025446C /* HomeView.swift in Sources */,
+				E3F61F532CBD0682008FD6A5 /* TransactionViewSubviews.swift in Sources */,
 				E3E953A02C78B8EC00621FE3 /* AppDatePicker.swift in Sources */,
 				E3027D672C834FC000ADBB8A /* HomeViewSections.swift in Sources */,
 				E3027D692C83507500ADBB8A /* HomeViewButtons.swift in Sources */,
 				E32B87022C7201750081C175 /* ViewModelProtocol.swift in Sources */,
+				E36700A42CB427EC004BA128 /* TransactionView.swift in Sources */,
 				E3880BA52C611A5D007FADDD /* SignInView.swift in Sources */,
 				E34F97FB2C5C07450091CD99 /* CoreMethods.swift in Sources */,
 				E32B87002C71183F0081C175 /* ServiceProtocol.swift in Sources */,
