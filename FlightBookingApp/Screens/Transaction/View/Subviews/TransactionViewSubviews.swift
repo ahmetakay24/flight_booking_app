@@ -11,10 +11,15 @@ struct TransactionViewHeaderAndImage: View {
     @Environment(\.appTheme) var theme
 
     var body: some View {
-        Text("Transaction")
-            .font(theme.fonts.bigTextSmaller)
-            .padding()
-            .frame(maxWidth: .infinity, alignment: .leading)
+        
+        HStack{
+            
+            Text("Transaction")
+                .font(theme.fonts.bigTextSmaller)
+                .minimumScaleFactor(0.5)
+                .padding()
+            
+        }.frame(width: theme.deviceSize.width,alignment: .leading)
 
         Image("transaction_image")
             .resizable()
@@ -35,6 +40,7 @@ struct TransactionViewTitleAndDescription: View {
         Text("After book a trip you can manage orders and see E-ticket here.")
             .multilineTextAlignment(.center)
             .lineLimit(2)
+            .minimumScaleFactor(0.5)
             .padding(.top)
             .padding(.horizontal)
     }

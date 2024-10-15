@@ -34,6 +34,7 @@
 		E3C1DC6A2C6648230025446C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1DC692C6648230025446C /* HomeView.swift */; };
 		E3E953A02C78B8EC00621FE3 /* AppDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E9539F2C78B8EC00621FE3 /* AppDatePicker.swift */; };
 		E3F61F532CBD0682008FD6A5 /* TransactionViewSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F61F522CBD0681008FD6A5 /* TransactionViewSubviews.swift */; };
+		E3F61F582CBD0D62008FD6A5 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F61F572CBD0D62008FD6A5 /* AccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		E3C1DC692C6648230025446C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E3E9539F2C78B8EC00621FE3 /* AppDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatePicker.swift; sourceTree = "<group>"; };
 		E3F61F522CBD0681008FD6A5 /* TransactionViewSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewSubviews.swift; sourceTree = "<group>"; };
+		E3F61F572CBD0D62008FD6A5 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 		E34F97EB2C5BFA050091CD99 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E3F61F552CBD0D4C008FD6A5 /* Account */,
 				E36700A12CB427B6004BA128 /* Transaction */,
 				E3C1DC672C66480D0025446C /* Home */,
 				E3880BA22C611A35007FADDD /* SignIn */,
@@ -389,6 +392,22 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
+		E3F61F552CBD0D4C008FD6A5 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				E3F61F562CBD0D54008FD6A5 /* View */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		E3F61F562CBD0D54008FD6A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E3F61F572CBD0D62008FD6A5 /* AccountView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -536,6 +555,7 @@
 				E3E953A02C78B8EC00621FE3 /* AppDatePicker.swift in Sources */,
 				E3027D672C834FC000ADBB8A /* HomeViewSections.swift in Sources */,
 				E3027D692C83507500ADBB8A /* HomeViewButtons.swift in Sources */,
+				E3F61F582CBD0D62008FD6A5 /* AccountView.swift in Sources */,
 				E32B87022C7201750081C175 /* ViewModelProtocol.swift in Sources */,
 				E36700A42CB427EC004BA128 /* TransactionView.swift in Sources */,
 				E3880BA52C611A5D007FADDD /* SignInView.swift in Sources */,
