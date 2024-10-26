@@ -8,70 +8,70 @@
 import SwiftUI
 
 struct AccountView: View {
- 
     @Environment(\.appTheme) var theme
+    
+    @State var isOpenQuickLogin: Bool = false
     
     var body: some View {
         NavigationStack {
-            VStack(spacing: 0) {
-                
-                VStack(alignment: .leading, spacing: 0) {
+            ScrollView {
+                VStack(spacing: 0) {
                     
-                    Text("My Profile")
-                        .font(theme.fonts.bigTextSmaller)
-                        .minimumScaleFactor(0.5)
-                        .foregroundStyle(.white)
-                        .padding(.top,sizeCalculator(theme.deviceSize.height, 2.95))
-                        .padding(.leading,sizeCalculator(theme.deviceSize.width, 4.26))
+                    AccountAppBar()
                     
-                    HStack() {
+                    VStack(spacing: 0) {
                         
-                        Circle()
-                            .foregroundStyle(.white)
-                            .frame(width: sizeCalculator(theme.deviceSize.width, 21.33), height: sizeCalculator(theme.deviceSize.height, 9.85))
-                            .padding(.trailing,sizeCalculator(theme.deviceSize.width, 5.06))
+                        AccountNavigateButton(buttonSymbol: "Navigation", buttonText: "New Order", buttonFunction: {})
+                        .padding(.vertical, sizeCalculator(theme.deviceSize.height, 2.95))
+                        .padding(.top, sizeCalculator(theme.deviceSize.height, 1.97))
                         
-                        VStack(alignment: .leading, spacing: 8) {
-                            
-                            Text("Ahmet Akay")
-                                .font(theme.fonts.bigTextSmaller)
-                                .foregroundStyle(.white)
-                            
-                            Text("ahmetakaybusiness@gmail.com")
-                                .font(theme.fonts.bodyBigger)
-                                .foregroundStyle(.white)
-                            
-                            Text("+48 571 571 571")
-                                .font(theme.fonts.bodyBigger)
-                                .foregroundStyle(.white)
-                        }
+                        Divider()
                         
-                        Spacer()
+                        AccountNavigateButton(buttonSymbol: "voucher", buttonText: "My Voucher", buttonFunction: {})
+                        .padding(.vertical, sizeCalculator(theme.deviceSize.height, 2.95))
                         
-                        Button(action: {}) {
-                            Image(systemName: "pencil")
-                                .foregroundStyle(.white)
-                        }
-                    }
-                    .padding(.horizontal,sizeCalculator(theme.deviceSize.width, 4.26))
-                    .padding(.top,sizeCalculator(theme.deviceSize.height, 2.95))
+                        Divider()
+                        
+                        AccountNavigateButton(buttonSymbol: "payment", buttonText: "Payment Methods", buttonFunction: {})
+                        .padding(.vertical, sizeCalculator(theme.deviceSize.height, 2.95))
+                        
+                        Divider()
+                        
+                        AccountNavigateButton(buttonSymbol: "add_friend", buttonText: "Invite Friends", buttonFunction: {})
+                        .padding(.vertical, sizeCalculator(theme.deviceSize.height, 2.95))
+                        
+                        Divider()
+                        
+                        AccountQuickLoginButton(isOpenQuickLogin: $isOpenQuickLogin, buttonSymbol: "quick_login", buttonText: "Quick Login", buttonFunction: {})
+                        .padding(.vertical, sizeCalculator(theme.deviceSize.height, 2.95))
+                        
+                    }.padding(.horizontal, 24)
+                    
+                    theme.otherColors.lightGray.frame(width: .infinity, height: sizeCalculator(theme.deviceSize.height, 1.97))
+                    
+                    VStack(spacing: 0) {
+                        
+                        AccountNavigateButton(buttonSymbol: "question", buttonText: "Help Center", buttonFunction: {})
+                        .padding(.vertical, sizeCalculator(theme.deviceSize.height, 2.95))
+                        
+                        Divider()
+                        
+                        AccountNavigateButton(buttonSymbol: "settings", buttonText: "Settings", buttonFunction: {})
+                        .padding(.vertical, sizeCalculator(theme.deviceSize.height, 2.95))
+                        
+                    }.padding(.horizontal, 24)
+                    
+                    theme.otherColors.lightGray.frame(width: .infinity, height: sizeCalculator(theme.deviceSize.height, 1.97))
+                    
+                    AccountNavigateButton(buttonSymbol: "log_out", buttonText: "Log Out", buttonFunction: {})
+                    .padding(.vertical, sizeCalculator(theme.deviceSize.height, 2.95)).padding(.horizontal, 24)
+                    
+                    theme.otherColors.lightGray.frame(width: .infinity, height: sizeCalculator(theme.deviceSize.height, 2.95))
                     
                 }
-                .frame(width: theme.deviceSize.width, height: sizeCalculator(theme.deviceSize.height, 27.70))
-                .background(theme.blueColors.bc80)
-                .clipShape(
-                    .rect(
-                        bottomLeadingRadius: 30,
-                        bottomTrailingRadius: 30
-                    )
-                )
-                
-                
-                
-                Spacer()
-            }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .edgesIgnoringSafeArea(.top)
+
+            }.frame(maxWidth: .infinity, maxHeight: .infinity)
+                .edgesIgnoringSafeArea(.top)
         }
     }
 }

@@ -10,6 +10,8 @@
 		E3027D622C80B16700ADBB8A /* HomeViewTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3027D612C80B16700ADBB8A /* HomeViewTabView.swift */; };
 		E3027D672C834FC000ADBB8A /* HomeViewSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3027D662C834FC000ADBB8A /* HomeViewSections.swift */; };
 		E3027D692C83507500ADBB8A /* HomeViewButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3027D682C83507500ADBB8A /* HomeViewButtons.swift */; };
+		E3282A522CC79846008F2335 /* AccountSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3282A512CC79846008F2335 /* AccountSections.swift */; };
+		E3282A542CC798AB008F2335 /* AccountButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3282A532CC798AB008F2335 /* AccountButtons.swift */; };
 		E32B86F72C71178A0081C175 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32B86F62C71178A0081C175 /* HomeModel.swift */; };
 		E32B86FA2C7117AA0081C175 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32B86F92C7117AA0081C175 /* HomeViewModel.swift */; };
 		E32B86FD2C7117BC0081C175 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32B86FC2C7117BC0081C175 /* HomeService.swift */; };
@@ -58,6 +60,8 @@
 		E3027D612C80B16700ADBB8A /* HomeViewTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTabView.swift; sourceTree = "<group>"; };
 		E3027D662C834FC000ADBB8A /* HomeViewSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewSections.swift; sourceTree = "<group>"; };
 		E3027D682C83507500ADBB8A /* HomeViewButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewButtons.swift; sourceTree = "<group>"; };
+		E3282A512CC79846008F2335 /* AccountSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSections.swift; sourceTree = "<group>"; };
+		E3282A532CC798AB008F2335 /* AccountButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountButtons.swift; sourceTree = "<group>"; };
 		E32B86F62C71178A0081C175 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		E32B86F92C7117AA0081C175 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E32B86FC2C7117BC0081C175 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
@@ -155,6 +159,15 @@
 				E367009D2CB4212B004BA128 /* HomeTextFields.swift */,
 			);
 			path = Textfields;
+			sourceTree = "<group>";
+		};
+		E3282A502CC797F0008F2335 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				E3282A512CC79846008F2335 /* AccountSections.swift */,
+				E3282A532CC798AB008F2335 /* AccountButtons.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 		E32B86F42C7117750081C175 /* Service */ = {
@@ -403,6 +416,7 @@
 		E3F61F562CBD0D54008FD6A5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E3282A502CC797F0008F2335 /* Subviews */,
 				E3F61F572CBD0D62008FD6A5 /* AccountView.swift */,
 			);
 			path = View;
@@ -472,7 +486,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					E35D23F92C5AAEF400400D42 = {
 						CreatedOnToolsVersion = 15.4;
@@ -543,12 +557,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E367009E2CB4212B004BA128 /* HomeTextFields.swift in Sources */,
+				E3282A522CC79846008F2335 /* AccountSections.swift in Sources */,
 				E34F97F32C5BFC190091CD99 /* AppTheme.swift in Sources */,
 				E32B86FD2C7117BC0081C175 /* HomeService.swift in Sources */,
 				E35D23FE2C5AAEF400400D42 /* FlightBookingAppApp.swift in Sources */,
 				E34F97EF2C5BFA280091CD99 /* OnboardingView.swift in Sources */,
 				E32B86FA2C7117AA0081C175 /* HomeViewModel.swift in Sources */,
 				E32B86F72C71178A0081C175 /* HomeModel.swift in Sources */,
+				E3282A542CC798AB008F2335 /* AccountButtons.swift in Sources */,
 				E3027D622C80B16700ADBB8A /* HomeViewTabView.swift in Sources */,
 				E3C1DC6A2C6648230025446C /* HomeView.swift in Sources */,
 				E3F61F532CBD0682008FD6A5 /* TransactionViewSubviews.swift in Sources */,
@@ -779,7 +795,6 @@
 		E35D24222C5AAEF500400D42 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -799,7 +814,6 @@
 		E35D24232C5AAEF500400D42 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -819,7 +833,6 @@
 		E35D24252C5AAEF500400D42 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X6S9N9K4MZ;
@@ -837,7 +850,6 @@
 		E35D24262C5AAEF500400D42 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X6S9N9K4MZ;

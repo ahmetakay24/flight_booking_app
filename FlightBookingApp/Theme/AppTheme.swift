@@ -53,6 +53,7 @@ struct AppTheme {
     
     struct OtherColors {
         var blackest : Color { return Color("Blackest") }
+        var lightGray : Color { return Color("projectGray") }
     }
     
     struct BlueColors {
