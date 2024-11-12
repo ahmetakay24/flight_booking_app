@@ -77,7 +77,7 @@ struct HomeChangeAirportButton : View {
     }
 }
 
-struct HomeDepartureAndArrivalDatePickers : View {
+struct HomeDepartureAndArrivalDatePickers: View {
     
     @Environment(\.appTheme) var theme
     
@@ -91,20 +91,21 @@ struct HomeDepartureAndArrivalDatePickers : View {
     
     var body: some View {
         HStack(spacing: 0) {
+            
             HStack(spacing: 0) {
                 VStack {
-                    TextField("", text: Binding(
-                        get: { formattedDate },
-                        set: { _ in }
-                    ))
-                    .padding(.leading, sizeCalculator(theme.deviceSize.width, 4.26))
-                    .disabled(showingDepartureDatePicker)
-                    .onTapGesture {
-                        showingDepartureDatePicker.toggle()
-                    }
+                    Text(formattedDate)
+                        .padding(.horizontal, sizeCalculator(theme.deviceSize.width, 3.5))
+                        .font(theme.fonts.bodyBigger)
+                        .foregroundStyle(.black)
+                        .minimumScaleFactor(0.5)
+                        .lineLimit(1)
+                        .onTapGesture {
+                            showingDepartureDatePicker.toggle()
+                        }.lineLimit(1)
                 }
                 .sheet(isPresented: $showingDepartureDatePicker, content: {
-                    AppDatePicker(selectedDate:$selectedDepartureDate)
+                    AppDatePicker(selectedDate: $selectedDepartureDate)
                         .presentationDetents([.height(sizeCalculator(theme.deviceSize.height, 62))])
                 })
             }
@@ -114,14 +115,17 @@ struct HomeDepartureAndArrivalDatePickers : View {
 
             Spacer()
 
+            //Yazıyı center hale getir
             HStack(spacing: 0) {
-                
                 VStack {
-                    TextField("", text: .constant(formattedDate))
-                        .padding(.leading, sizeCalculator(theme.deviceSize.width, 4.26))
-                        .disabled(showingArrivalDatePicker)
+                    Text(formattedDate)
+                        .padding(.horizontal, sizeCalculator(theme.deviceSize.width, 3.5))
+                        .font(theme.fonts.bodyBigger)
+                        .foregroundStyle(.black)
+                        .minimumScaleFactor(0.5)
+                        .lineLimit(1)
                         .onTapGesture {
-                            showingDepartureDatePicker.toggle()
+                            showingArrivalDatePicker.toggle()
                         }
                 }
                 .sheet(isPresented: $showingArrivalDatePicker, content: {
@@ -136,6 +140,7 @@ struct HomeDepartureAndArrivalDatePickers : View {
         .frame(width: sizeCalculator(theme.deviceSize.width, 82.93), alignment: .leading)
     }
 }
+
 
 
 struct HomeSearchFlightsButton : View {
