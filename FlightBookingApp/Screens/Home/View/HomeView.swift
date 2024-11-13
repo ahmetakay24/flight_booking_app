@@ -12,10 +12,8 @@ struct HomeView: View {
     @Environment(\.appTheme) var theme: AppTheme
     
     var body: some View {
-        
         VStack(spacing: 0) {
             
-            // Main Content
             if selectedTab == 0 {
                 HomeScreen()
             } else if selectedTab == 1 {
@@ -45,7 +43,6 @@ struct HomeView: View {
                     
                     Spacer()
                     
-                    // Transaction Tab
                     VStack(spacing: 4) {
                         Button(action: { selectedTab = 1 }) {
                             Image(systemName: selectedTab == 1 ? "ticket.fill" : "ticket")
@@ -59,7 +56,7 @@ struct HomeView: View {
                             .foregroundColor(selectedTab == 1 ? theme.blueColors.bc80 : .gray)
                     }
                     
-                    Spacer() // Tab'lar arası boşluk
+                    Spacer()
                     
                     VStack(spacing: 4) {
                         Button(action: { selectedTab = 2 }) {

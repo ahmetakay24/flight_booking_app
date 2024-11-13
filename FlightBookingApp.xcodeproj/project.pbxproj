@@ -33,6 +33,7 @@
 		E3880B9D2C60F76E007FADDD /* Inter28pt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3880B9A2C60F75D007FADDD /* Inter28pt-Bold.ttf */; };
 		E3880BA12C60F7ED007FADDD /* Inter28pt-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3880BA02C60F7ED007FADDD /* Inter28pt-Thin.ttf */; };
 		E3880BA52C611A5D007FADDD /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3880BA42C611A5D007FADDD /* SignInView.swift */; };
+		E3B006312CE48CF0004CB784 /* SearchFlightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B006302CE48CF0004CB784 /* SearchFlightsView.swift */; };
 		E3C1DC6A2C6648230025446C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1DC692C6648230025446C /* HomeView.swift */; };
 		E3E953A02C78B8EC00621FE3 /* AppDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E9539F2C78B8EC00621FE3 /* AppDatePicker.swift */; };
 		E3F61F532CBD0682008FD6A5 /* TransactionViewSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F61F522CBD0681008FD6A5 /* TransactionViewSubviews.swift */; };
@@ -87,6 +88,7 @@
 		E3880B9B2C60F76B007FADDD /* Inter28pt-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter28pt-Medium.ttf"; sourceTree = "<group>"; };
 		E3880BA02C60F7ED007FADDD /* Inter28pt-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter28pt-Thin.ttf"; sourceTree = "<group>"; };
 		E3880BA42C611A5D007FADDD /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		E3B006302CE48CF0004CB784 /* SearchFlightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightsView.swift; sourceTree = "<group>"; };
 		E3C1DC692C6648230025446C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E3E9539F2C78B8EC00621FE3 /* AppDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatePicker.swift; sourceTree = "<group>"; };
 		E3F61F522CBD0681008FD6A5 /* TransactionViewSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewSubviews.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 		E34F97EB2C5BFA050091CD99 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E3B0062D2CE48CC2004CB784 /* SearchFlights */,
 				E3F61F552CBD0D4C008FD6A5 /* Account */,
 				E36700A12CB427B6004BA128 /* Transaction */,
 				E3C1DC672C66480D0025446C /* Home */,
@@ -367,6 +370,46 @@
 				E3880BA42C611A5D007FADDD /* SignInView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E3B0062D2CE48CC2004CB784 /* SearchFlights */ = {
+			isa = PBXGroup;
+			children = (
+				E3B006352CE48D1F004CB784 /* Service */,
+				E3B006332CE48CFC004CB784 /* ViewModel */,
+				E3B006322CE48CF4004CB784 /* Model */,
+				E3B006342CE48D13004CB784 /* View */,
+			);
+			path = SearchFlights;
+			sourceTree = "<group>";
+		};
+		E3B006322CE48CF4004CB784 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E3B006332CE48CFC004CB784 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E3B006342CE48D13004CB784 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E3B006302CE48CF0004CB784 /* SearchFlightsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E3B006352CE48D1F004CB784 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		E3C1DC672C66480D0025446C /* Home */ = {
@@ -568,6 +611,7 @@
 				E3027D622C80B16700ADBB8A /* HomeViewTabView.swift in Sources */,
 				E3C1DC6A2C6648230025446C /* HomeView.swift in Sources */,
 				E3F61F532CBD0682008FD6A5 /* TransactionViewSubviews.swift in Sources */,
+				E3B006312CE48CF0004CB784 /* SearchFlightsView.swift in Sources */,
 				E3E953A02C78B8EC00621FE3 /* AppDatePicker.swift in Sources */,
 				E3027D672C834FC000ADBB8A /* HomeViewSections.swift in Sources */,
 				E3027D692C83507500ADBB8A /* HomeViewButtons.swift in Sources */,
