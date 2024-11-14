@@ -74,7 +74,7 @@ struct HomeScreenBookingContainer: View {
             HomeSearchFlightsButton()
                 .padding(.top, sizeCalculator(theme.deviceSize.height, 2.95))
 
-        }.frame(width: theme.deviceSize.width, height: .infinity, alignment: .top)
+        }.frame(width: .infinity, height: .infinity, alignment: .top)
             .background(.white)
             
     }

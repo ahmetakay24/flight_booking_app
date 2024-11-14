@@ -16,7 +16,7 @@ struct FlightBookingAppApp: App {
         WindowGroup {
             //OnboardingView().environment(\.appTheme, AppTheme())
             //SignInView().environment(\.appTheme, AppTheme())
-            HomeView().environment(\.appTheme, AppTheme())
+            SearchFlightsView().environment(\.appTheme, AppTheme())
         }
     }
 }

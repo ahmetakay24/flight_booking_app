@@ -35,7 +35,7 @@
 		E3880BA52C611A5D007FADDD /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3880BA42C611A5D007FADDD /* SignInView.swift */; };
 		E3B006312CE48CF0004CB784 /* SearchFlightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B006302CE48CF0004CB784 /* SearchFlightsView.swift */; };
 		E3C1DC6A2C6648230025446C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1DC692C6648230025446C /* HomeView.swift */; };
-		E3E953A02C78B8EC00621FE3 /* AppDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E9539F2C78B8EC00621FE3 /* AppDatePicker.swift */; };
+		E3E953A02C78B8EC00621FE3 /* CoreSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E9539F2C78B8EC00621FE3 /* CoreSubviews.swift */; };
 		E3F61F532CBD0682008FD6A5 /* TransactionViewSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F61F522CBD0681008FD6A5 /* TransactionViewSubviews.swift */; };
 		E3F61F582CBD0D62008FD6A5 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F61F572CBD0D62008FD6A5 /* AccountView.swift */; };
 /* End PBXBuildFile section */
@@ -90,7 +90,7 @@
 		E3880BA42C611A5D007FADDD /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		E3B006302CE48CF0004CB784 /* SearchFlightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightsView.swift; sourceTree = "<group>"; };
 		E3C1DC692C6648230025446C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		E3E9539F2C78B8EC00621FE3 /* AppDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatePicker.swift; sourceTree = "<group>"; };
+		E3E9539F2C78B8EC00621FE3 /* CoreSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreSubviews.swift; sourceTree = "<group>"; };
 		E3F61F522CBD0681008FD6A5 /* TransactionViewSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewSubviews.swift; sourceTree = "<group>"; };
 		E3F61F572CBD0D62008FD6A5 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -435,7 +435,7 @@
 		E3E9539C2C78B88E00621FE3 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
-				E3E9539F2C78B8EC00621FE3 /* AppDatePicker.swift */,
+				E3E9539F2C78B8EC00621FE3 /* CoreSubviews.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -612,7 +612,7 @@
 				E3C1DC6A2C6648230025446C /* HomeView.swift in Sources */,
 				E3F61F532CBD0682008FD6A5 /* TransactionViewSubviews.swift in Sources */,
 				E3B006312CE48CF0004CB784 /* SearchFlightsView.swift in Sources */,
-				E3E953A02C78B8EC00621FE3 /* AppDatePicker.swift in Sources */,
+				E3E953A02C78B8EC00621FE3 /* CoreSubviews.swift in Sources */,
 				E3027D672C834FC000ADBB8A /* HomeViewSections.swift in Sources */,
 				E3027D692C83507500ADBB8A /* HomeViewButtons.swift in Sources */,
 				E3F61F582CBD0D62008FD6A5 /* AccountView.swift in Sources */,
