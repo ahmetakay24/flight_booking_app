@@ -70,3 +70,7 @@ This project uses a mock RESTful API to simulate flight data. The API is built u
 
 # Contributing
 Contributions are welcome! Please feel free to submit a Pull Request or open an issue.
+
+## Screenshots
+
+![Screenshot 1](https://i.hizliresim.com/a0xnuhz.png)
